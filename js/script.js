@@ -28,7 +28,7 @@ function time() {
   }
 }
 
-function makan() {
+function (makan()) {
   switch (time()) {
     case "Pagi":
       return "sarapan"
@@ -60,7 +60,7 @@ function selesai() {
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
     title: 'Halo Diana!',
-    html: `Selamat ${Date()}, Kamu udah ${time()}?`,
+    html: `Selamat ${time()}, Kamu udah ${makan()}?`,
     timer: 2500,
     timerProgressBar: true,
     showConfirmButton: false,
